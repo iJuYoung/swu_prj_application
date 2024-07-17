@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 // TestPropertySource 를 별도로 쓰지 않고 MySQL DB 에 직접 테스트 하며 데이터 확인
-//@TestPropertySource(locations = "classpath:application-test.properties")
+@TestPropertySource(locations = "classpath:application-test.properties")
 class OrderProductRepositoryTest {
     // User & Order & OrderProduct & Product 생성 및 테스트
     // 1) 리포지토리 주입
